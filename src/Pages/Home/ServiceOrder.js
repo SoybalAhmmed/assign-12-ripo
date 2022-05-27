@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
 import {  toast } from 'react-toastify';
+import Loading from '../Shared/Loading';
 
 
 const ServiceOrder = () => {
@@ -23,7 +24,9 @@ const ServiceOrder = () => {
         phone: event.target.phone.value
     }
     
-    
+    if (loading) {
+      return <Loading></Loading>
+  }
     fetch('http://localhost:5000/booking', {
       method: 'POST',
       headers: {
