@@ -27,7 +27,7 @@ const ServiceOrder = () => {
     if (loading) {
       return <Loading></Loading>
   }
-    fetch('http://localhost:5000/booking', {
+    fetch('https://murmuring-atoll-76800.herokuapp.com/booking', {
       method: 'POST',
       headers: {
           'content-type': 'application/json'
@@ -44,7 +44,7 @@ const ServiceOrder = () => {
     }
 
     useEffect( () =>{
-        const url = `http://localhost:5000/service/${serviceId}`;
+        const url = `https://murmuring-atoll-76800.herokuapp.com/service/${serviceId}`;
         console.log(url);
         fetch(url)
         .then(res=> res.json())

@@ -7,7 +7,7 @@ import BookRow from './BookRow';
 const ManageBooks = () => {
     const [deletingBook, setDeletingBook] = useState(null);
 
-    const { data: books, isLoading, refetch } = useQuery('books', () => fetch('http://localhost:5000/book', {
+    const { data: books, isLoading, refetch } = useQuery('books', () => fetch('https://murmuring-atoll-76800.herokuapp.com/book', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -19,8 +19,8 @@ const ManageBooks = () => {
     return (
         <div>
             <h2 className="text-2xl">Manage Books: {books.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div  className="overflow-x-auto">
+                <table  className="table w-full">
                     <thead>
                         <tr>
                             <th></th>

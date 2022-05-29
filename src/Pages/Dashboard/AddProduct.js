@@ -26,7 +26,7 @@ const AddProduct = () => {
                     img: img
                 }
                 // send to your database 
-                fetch('http://localhost:5000/book', {
+                fetch('https://murmuring-atoll-76800.herokuapp.com/book', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

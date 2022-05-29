@@ -10,15 +10,15 @@ const BookRow = ({book,index,refetch,setDeletingBook}) => {
     return (
         <tr>
         <th>{index + 1}</th>
-        <td><div class="avatar">
-            <div class="w-8 rounded">
+        <td><div  className="avatar">
+            <div  className="w-8 rounded">
                 <img src={img} alt={bookname} />
             </div>
         </div></td>
         <td>{bookname}</td>
         <td>{price}</td>
         <td>
-        <label onClick={() => setDeletingBook(book)} for="delete-confirm-modal" class="btn btn-xs btn-error">Delete</label>        </td>
+        <label onClick={() => setDeletingBook(book)} for="delete-confirm-modal"  className="btn btn-xs btn-error">Delete</label>        </td>
     </tr>
     );
 };

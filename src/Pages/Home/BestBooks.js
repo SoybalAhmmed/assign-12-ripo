@@ -12,9 +12,9 @@ const BestBooks = () => {
                 <img className='mt-[-80px] max-w-md' src={best} alt="" />
             </div>
             <div className='flex-1 px-5'>
-                <h3 className='text-xl text-primary font-bold'>Appointment</h3>
-                <h2 className='text-3xl text-white'>Make an Appointment Today</h2>
-                <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita sequi, temporibus, aut illo doloribus quaerat explicabo, assumenda consectetur est vel ad sed maiores doloremque consequatur. Amet consequuntur quibusdam autem, quod maxime qui itaque quaerat.</p>
+                <h3 className='text-xl text-primary font-bold'>Best Book</h3>
+                <h2 className='text-3xl text-white'>Booking Best Book Today</h2>
+                <p className='text-white'>A room without books is like a body without a soul Good friends, good books, and a sleepy conscience: this is the ideal life.</p>
                 
             </div>
         </section>
